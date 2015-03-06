@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1111/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">864f8e98-99a6-4a06-80b3-1dd2c5e4556c</identifier>
+  </ID>
+  <name>FKA</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">9197e7fc-2c04-4f08-bf15-911a505fec50</identifier>
+      </ID>
+      <name>FKA_ID</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">37b6bb15-0cc2-4e10-ad35-cda1ad9c0390</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">79177f51-7c2e-4dd1-af53-d2bfc5242690</identifier>
+      </ID>
+      <name>NAME</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">2abfcae7-0876-4fa4-bd36-a4d52ee2dead</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">8d0289a0-c7f9-4f24-bb77-5469425243ef</identifier>
+      </ID>
+      <name>FKA_FKA_PHARMACY_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>FKA_ID</name>
+          <identifier class="java.lang.String">9197e7fc-2c04-4f08-bf15-911a505fec50</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>FKA</name>
+            <identifier class="java.lang.String">864f8e98-99a6-4a06-80b3-1dd2c5e4556c</identifier>
+            <schemaName>DBDEMO</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>DBDEMO</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>FKA_PHARMACY_PK</name>
+        <identifier class="java.lang.String">c59bf5ad-f4f2-4d8c-b732-db836df7caf4</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>FKA_PHARMACY</name>
+          <identifier class="java.lang.String">8525b8f8-1552-42ac-b999-b18f6b0c9df5</identifier>
+          <schemaName>DBDEMO</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>DBDEMO</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">adc55bc8-3162-42a0-ab17-86795e2ebb01</identifier>
+      </ID>
+      <name>FKA_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>FKA_ID</name>
+          <identifier class="java.lang.String">9197e7fc-2c04-4f08-bf15-911a505fec50</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>FKA</name>
+            <identifier class="java.lang.String">864f8e98-99a6-4a06-80b3-1dd2c5e4556c</identifier>
+            <schemaName>DBDEMO</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>DBDEMO</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+    </constraint>
+  </constraints>
+  <properties>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>EPRES</name>
+  </schema>
+</table>

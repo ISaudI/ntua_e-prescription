@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<schema xmlns="http://xmlns.oracle.com/jdeveloper/1111/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">79afac11-2efa-4dc9-a550-c631b1cc8e0e</identifier>
+  </ID>
+  <name>EPRES</name>
+</schema>

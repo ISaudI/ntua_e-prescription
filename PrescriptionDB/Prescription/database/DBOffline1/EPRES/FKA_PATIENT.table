@@ -1,0 +1,172 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1111/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">776f41ef-a777-4744-926f-fc57f24dcaa6</identifier>
+  </ID>
+  <name>FKA_PATIENT</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">ad70489b-dbf1-4e14-a84c-3e828a885cf1</identifier>
+      </ID>
+      <name>FKA_PATIENT_ID</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">0e373add-f1cb-4015-83ca-3282fb5ef866</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">aeee3fc3-9124-4a67-a4f6-4bcd28ad3ae9</identifier>
+      </ID>
+      <name>PATIENT_AMKA</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">ebc7c4b7-ec18-4274-8a68-33d997434c44</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">245cda91-26f4-445e-a549-6b589cf4aa92</identifier>
+      </ID>
+      <name>FKA_ID</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">ad66f942-356a-46dc-a359-ec659a5affd7</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">95e31379-3c78-41c4-b9dd-ef2db51e7948</identifier>
+      </ID>
+      <name>FKA_PATIENT_FKA_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>FKA_ID</name>
+          <identifier class="java.lang.String">245cda91-26f4-445e-a549-6b589cf4aa92</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>FKA_PATIENT</name>
+            <identifier class="java.lang.String">776f41ef-a777-4744-926f-fc57f24dcaa6</identifier>
+            <schemaName>EPRES</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>EPRES</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>FKA_PK</name>
+        <identifier class="java.lang.String">adc55bc8-3162-42a0-ab17-86795e2ebb01</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>FKA</name>
+          <identifier class="java.lang.String">864f8e98-99a6-4a06-80b3-1dd2c5e4556c</identifier>
+          <schemaName>EPRES</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>DBDEMO</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">0c1603e8-3866-46f6-ab78-9dffa09ccfa9</identifier>
+      </ID>
+      <name>FKA_PATIENT_PATIENT_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>PATIENT_AMKA</name>
+          <identifier class="java.lang.String">aeee3fc3-9124-4a67-a4f6-4bcd28ad3ae9</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>FKA_PATIENT</name>
+            <identifier class="java.lang.String">776f41ef-a777-4744-926f-fc57f24dcaa6</identifier>
+            <schemaName>EPRES</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>EPRES</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>PATIENTS_PK</name>
+        <identifier class="java.lang.String">01709d06-bf92-4a50-8495-e07e23912dee</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>PATIENT</name>
+          <identifier class="java.lang.String">d7ae03b8-e2ce-4c2d-a82d-15423f5fd3d7</identifier>
+          <schemaName>EPRES</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>DBDEMO</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">d2d36508-0c01-4b43-9422-997946f60875</identifier>
+      </ID>
+      <name>FKA_PATIENT_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>FKA_PATIENT_ID</name>
+          <identifier class="java.lang.String">ad70489b-dbf1-4e14-a84c-3e828a885cf1</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>FKA_PATIENT</name>
+            <identifier class="java.lang.String">776f41ef-a777-4744-926f-fc57f24dcaa6</identifier>
+            <schemaName>EPRES</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>EPRES</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+    </constraint>
+  </constraints>
+  <properties>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>EPRES</name>
+  </schema>
+</table>
