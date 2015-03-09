@@ -25,6 +25,16 @@
         </dataTypeID>
       </dataTypeUsage>
       <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>ColumnSequenceExpander.ReuseSequence</key>
+          <value class="java.lang.Boolean">false</value>
+        </entry>
+        <entry>
+          <key>ColumnSequenceExpander.TriggerNullCheck</key>
+          <value class="java.lang.Boolean">true</value>
+        </entry>
+      </properties>
     </column>
     <column>
       <ID class="oracle.javatools.db.IdentifierBasedID">
@@ -360,7 +370,6 @@
             <schemaName>EPRES</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>EPRES</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -391,10 +400,9 @@
           <parent class="oracle.javatools.db.IdentifierBasedID">
             <name>PATIENT</name>
             <identifier class="java.lang.String">d7ae03b8-e2ce-4c2d-a82d-15423f5fd3d7</identifier>
-            <schemaName>DBDEMO</schemaName>
+            <schemaName>EPRES</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>DBDEMO</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>

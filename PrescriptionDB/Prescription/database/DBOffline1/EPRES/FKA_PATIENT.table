@@ -25,6 +25,34 @@
         </dataTypeID>
       </dataTypeUsage>
       <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>AUTO_GENERATED_SEQUENCE</key>
+          <value class="oracle.javatools.db.IdentifierBasedID">
+            <name>FKA_PATIENT_SEQ</name>
+            <identifier class="java.lang.String">6666d389-b843-4c7d-bf5e-e60b641c0846</identifier>
+            <schemaName>EPRES</schemaName>
+            <type>SEQUENCE</type>
+          </value>
+        </entry>
+        <entry>
+          <key>AUTO_GENERATED_SEQUENCE_TRIGGER</key>
+          <value class="oracle.javatools.db.IdentifierBasedID">
+            <name>FKA_PATIENT_TRG</name>
+            <identifier class="java.lang.String">f67e4017-29e9-4cf5-8f6c-097932de3bbe</identifier>
+            <schemaName>EPRES</schemaName>
+            <type>TRIGGER</type>
+          </value>
+        </entry>
+        <entry>
+          <key>ColumnSequenceExpander.ReuseSequence</key>
+          <value class="java.lang.Boolean">false</value>
+        </entry>
+        <entry>
+          <key>ColumnSequenceExpander.TriggerNullCheck</key>
+          <value class="java.lang.Boolean">true</value>
+        </entry>
+      </properties>
     </column>
     <column>
       <ID class="oracle.javatools.db.IdentifierBasedID">
@@ -85,7 +113,6 @@
             <schemaName>EPRES</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>EPRES</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -119,7 +146,6 @@
             <schemaName>EPRES</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>EPRES</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -153,7 +179,6 @@
             <schemaName>EPRES</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>EPRES</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>

@@ -20,6 +20,34 @@
         </dataTypeID>
       </dataTypeUsage>
       <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>AUTO_GENERATED_SEQUENCE</key>
+          <value class="oracle.javatools.db.IdentifierBasedID">
+            <name>FKA_DOCTORS_SEQ</name>
+            <identifier class="java.lang.String">18062e0d-6b34-4d00-ac44-13e15b91a796</identifier>
+            <schemaName>EPRES</schemaName>
+            <type>SEQUENCE</type>
+          </value>
+        </entry>
+        <entry>
+          <key>AUTO_GENERATED_SEQUENCE_TRIGGER</key>
+          <value class="oracle.javatools.db.IdentifierBasedID">
+            <name>FKA_DOCTORS_TRG</name>
+            <identifier class="java.lang.String">5f07fee3-53b3-413e-b0e0-2a6db3d7746d</identifier>
+            <schemaName>EPRES</schemaName>
+            <type>TRIGGER</type>
+          </value>
+        </entry>
+        <entry>
+          <key>ColumnSequenceExpander.ReuseSequence</key>
+          <value class="java.lang.Boolean">false</value>
+        </entry>
+        <entry>
+          <key>ColumnSequenceExpander.TriggerNullCheck</key>
+          <value class="java.lang.Boolean">true</value>
+        </entry>
+      </properties>
     </column>
     <column>
       <ID class="oracle.javatools.db.IdentifierBasedID">
@@ -67,10 +95,9 @@
           <parent class="oracle.javatools.db.IdentifierBasedID">
             <name>FKA_DOCTORS</name>
             <identifier class="java.lang.String">48115d41-b2a7-457a-b69d-a4b5eba3312b</identifier>
-            <schemaName>DBDEMO</schemaName>
+            <schemaName>EPRES</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>DBDEMO</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -101,10 +128,9 @@
           <parent class="oracle.javatools.db.IdentifierBasedID">
             <name>FKA_DOCTORS</name>
             <identifier class="java.lang.String">48115d41-b2a7-457a-b69d-a4b5eba3312b</identifier>
-            <schemaName>DBDEMO</schemaName>
+            <schemaName>EPRES</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>DBDEMO</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -135,10 +161,9 @@
           <parent class="oracle.javatools.db.IdentifierBasedID">
             <name>FKA_DOCTORS</name>
             <identifier class="java.lang.String">48115d41-b2a7-457a-b69d-a4b5eba3312b</identifier>
-            <schemaName>DBDEMO</schemaName>
+            <schemaName>EPRES</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>DBDEMO</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>

@@ -25,6 +25,34 @@
         </dataTypeID>
       </dataTypeUsage>
       <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>AUTO_GENERATED_SEQUENCE</key>
+          <value class="oracle.javatools.db.IdentifierBasedID">
+            <name>FKA_PHARMACY_SEQ</name>
+            <identifier class="java.lang.String">c0b9e352-cf7d-4397-9a47-a7a5cdf27b57</identifier>
+            <schemaName>EPRES</schemaName>
+            <type>SEQUENCE</type>
+          </value>
+        </entry>
+        <entry>
+          <key>AUTO_GENERATED_SEQUENCE_TRIGGER</key>
+          <value class="oracle.javatools.db.IdentifierBasedID">
+            <name>FKA_PHARMACY_TRG</name>
+            <identifier class="java.lang.String">b6b5bfe1-2bd1-4c8b-9eea-ffa4dd3f64e8</identifier>
+            <schemaName>EPRES</schemaName>
+            <type>TRIGGER</type>
+          </value>
+        </entry>
+        <entry>
+          <key>ColumnSequenceExpander.ReuseSequence</key>
+          <value class="java.lang.Boolean">false</value>
+        </entry>
+        <entry>
+          <key>ColumnSequenceExpander.TriggerNullCheck</key>
+          <value class="java.lang.Boolean">true</value>
+        </entry>
+      </properties>
     </column>
     <column>
       <ID class="oracle.javatools.db.IdentifierBasedID">
@@ -82,10 +110,9 @@
           <parent class="oracle.javatools.db.IdentifierBasedID">
             <name>FKA_PHARMACY</name>
             <identifier class="java.lang.String">8525b8f8-1552-42ac-b999-b18f6b0c9df5</identifier>
-            <schemaName>DBDEMO</schemaName>
+            <schemaName>EPRES</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>DBDEMO</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -116,10 +143,9 @@
           <parent class="oracle.javatools.db.IdentifierBasedID">
             <name>FKA_PHARMACY</name>
             <identifier class="java.lang.String">8525b8f8-1552-42ac-b999-b18f6b0c9df5</identifier>
-            <schemaName>DBDEMO</schemaName>
+            <schemaName>EPRES</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>DBDEMO</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>

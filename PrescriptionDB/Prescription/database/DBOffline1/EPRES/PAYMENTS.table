@@ -26,6 +26,34 @@
         </dataTypeID>
       </dataTypeUsage>
       <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>AUTO_GENERATED_SEQUENCE</key>
+          <value class="oracle.javatools.db.IdentifierBasedID">
+            <name>PAYMENTS_SEQ</name>
+            <identifier class="java.lang.String">6ccb16f0-cd04-42fa-8e30-d017864aac62</identifier>
+            <schemaName>EPRES</schemaName>
+            <type>SEQUENCE</type>
+          </value>
+        </entry>
+        <entry>
+          <key>AUTO_GENERATED_SEQUENCE_TRIGGER</key>
+          <value class="oracle.javatools.db.IdentifierBasedID">
+            <name>PAYMENTS_TRG</name>
+            <identifier class="java.lang.String">6d6ea3bd-07d4-4785-91e1-5c9e133872da</identifier>
+            <schemaName>EPRES</schemaName>
+            <type>TRIGGER</type>
+          </value>
+        </entry>
+        <entry>
+          <key>ColumnSequenceExpander.ReuseSequence</key>
+          <value class="java.lang.Boolean">false</value>
+        </entry>
+        <entry>
+          <key>ColumnSequenceExpander.TriggerNullCheck</key>
+          <value class="java.lang.Boolean">true</value>
+        </entry>
+      </properties>
     </column>
     <column>
       <ID class="oracle.javatools.db.IdentifierBasedID">
@@ -104,7 +132,6 @@
             <schemaName>EPRES</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>EPRES</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>

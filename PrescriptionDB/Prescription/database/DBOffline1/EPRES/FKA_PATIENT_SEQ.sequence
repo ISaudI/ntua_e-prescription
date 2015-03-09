@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<sequence xmlns="http://xmlns.oracle.com/jdeveloper/1111/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">6666d389-b843-4c7d-bf5e-e60b641c0846</identifier>
+  </ID>
+  <name>FKA_PATIENT_SEQ</name>
+  <cycleFlag>false</cycleFlag>
+  <incrementBy>1</incrementBy>
+  <minValue>1</minValue>
+  <orderFlag>false</orderFlag>
+  <schema>
+    <name>EPRES</name>
+  </schema>
+  <startWith>1</startWith>
+</sequence>

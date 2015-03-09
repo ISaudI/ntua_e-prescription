@@ -25,6 +25,34 @@
         </dataTypeID>
       </dataTypeUsage>
       <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>AUTO_GENERATED_SEQUENCE</key>
+          <value class="oracle.javatools.db.IdentifierBasedID">
+            <name>VISIT_SEQ</name>
+            <identifier class="java.lang.String">9be44ba0-d403-4efc-90eb-397cfb62d2cc</identifier>
+            <schemaName>EPRES</schemaName>
+            <type>SEQUENCE</type>
+          </value>
+        </entry>
+        <entry>
+          <key>AUTO_GENERATED_SEQUENCE_TRIGGER</key>
+          <value class="oracle.javatools.db.IdentifierBasedID">
+            <name>VISIT_TRG</name>
+            <identifier class="java.lang.String">cb3319bc-94de-4e6e-b39d-b2be99ce6834</identifier>
+            <schemaName>EPRES</schemaName>
+            <type>TRIGGER</type>
+          </value>
+        </entry>
+        <entry>
+          <key>ColumnSequenceExpander.ReuseSequence</key>
+          <value class="java.lang.Boolean">false</value>
+        </entry>
+        <entry>
+          <key>ColumnSequenceExpander.TriggerNullCheck</key>
+          <value class="java.lang.Boolean">true</value>
+        </entry>
+      </properties>
     </column>
     <column>
       <ID class="oracle.javatools.db.IdentifierBasedID">
@@ -242,10 +270,9 @@
           <parent class="oracle.javatools.db.IdentifierBasedID">
             <name>VISIT</name>
             <identifier class="java.lang.String">470f2586-c89c-4e32-8fda-57a892a8cd72</identifier>
-            <schemaName>DBDEMO</schemaName>
+            <schemaName>EPRES</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>DBDEMO</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -276,10 +303,9 @@
           <parent class="oracle.javatools.db.IdentifierBasedID">
             <name>VISIT</name>
             <identifier class="java.lang.String">470f2586-c89c-4e32-8fda-57a892a8cd72</identifier>
-            <schemaName>DBDEMO</schemaName>
+            <schemaName>EPRES</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>DBDEMO</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -310,10 +336,9 @@
           <parent class="oracle.javatools.db.IdentifierBasedID">
             <name>VISIT</name>
             <identifier class="java.lang.String">470f2586-c89c-4e32-8fda-57a892a8cd72</identifier>
-            <schemaName>DBDEMO</schemaName>
+            <schemaName>EPRES</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>DBDEMO</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -344,10 +369,9 @@
           <parent class="oracle.javatools.db.IdentifierBasedID">
             <name>VISIT</name>
             <identifier class="java.lang.String">470f2586-c89c-4e32-8fda-57a892a8cd72</identifier>
-            <schemaName>DBDEMO</schemaName>
+            <schemaName>EPRES</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>DBDEMO</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
