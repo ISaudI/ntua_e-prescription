@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="windows-1253" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="FkaDoctorsDoctorFkLink1"
+  Version="11.1.1.64.93"
+  InheritPersonalization="true">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <ViewLinkDefEnd
+    Name="DoctorView1"
+    Cardinality="1"
+    Owner="prescriptionDB.model.DoctorView1"
+    Source="true">
+    <DesignTime>
+      <Attr Name="_finderName" Value="DoctorView1"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="prescriptionDB.model.DoctorView1.Amka"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="FkaDoctorsView1"
+    Cardinality="-1"
+    Owner="prescriptionDB.model.FkaDoctorsView1">
+    <DesignTime>
+      <Attr Name="_finderName" Value="FkaDoctorsView1"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="prescriptionDB.model.FkaDoctorsView1.DoctorAmka"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>
